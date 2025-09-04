@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction App</title>
+</head>
+<body>
+    <h1>توقع الرقم القادم</h1>
+    <form method="POST" action="/predict">
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" required>
+        <button type="submit">توقّع</button>
+    </form>
+
+    {% if prediction %}
+        <h2>النتيجة:</h2>
+        <p>User ID: {{ user_id }}</p>
+        <p>Prediction: {{ prediction }}</p>
+        <p>History: {{ history }}</p>
+    {% endif %}
+</body>
+</html>

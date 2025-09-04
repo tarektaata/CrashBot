@@ -1,0 +1,5 @@
+flask
+requests
+websockets
+waitress
+python-dotenv
