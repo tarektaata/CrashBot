@@ -3,3 +3,5 @@ requests
 websockets
 waitress
 python-dotenv
+telebot
+sqlite3
